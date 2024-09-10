@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/InscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/inscription.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/loginView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,6 +58,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\laura\IdeaProjects\TodolistJX\src\main\resources\appli\todolistjx" />
+      <recent name="C:\Users\laura\IdeaProjects\TodolistJX\src\main\resources\appli\todolistjx\acceuil" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="appli.todolistjx" />
     </key>
@@ -81,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725968759092</updated>
-      <workItem from="1725968760192" duration="3115000" />
+      <workItem from="1725968760192" duration="4915000" />
     </task>
     <servers />
   </component>
