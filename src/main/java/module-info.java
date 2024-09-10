@@ -9,4 +9,6 @@ module appli.todolistjx {
 
     opens appli.todolistjx to javafx.fxml;
     exports appli.todolistjx;
+    exports appli.todolistjx.acceuil;
+    opens appli.todolistjx.acceuil to javafx.fxml;
 }

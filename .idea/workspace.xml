@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +50,7 @@
       <module name="TodolistJX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="appli.todolistjx.*" />
+          <option name="PATTERN" value="appli.todolistjx.acceuil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725968759092</updated>
-      <workItem from="1725968760192" duration="1844000" />
+      <workItem from="1725968760192" duration="2185000" />
     </task>
     <servers />
   </component>

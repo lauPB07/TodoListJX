@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="appli.todolistjx.LoginController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="80.0" layoutY="78.0" text="Bienvenue !">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="138.0" text="Votre Email :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="254.0" text="Votre Mot de passe :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="383.0" text="Label pour erreur " textFill="#f70707">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="76.0" layoutY="183.0" promptText="Votre email" />
+      <PasswordField fx:id="mdp" layoutX="76.0" layoutY="285.0" promptText="Mot de passe" />
+      <Button layoutX="114.0" layoutY="433.0" mnemonicParsing="false" text="Connexion" />
+      <Button layoutX="87.0" layoutY="480.0" mnemonicParsing="false" text="Mot de passe oublier" />
+      <Button layoutX="113.0" layoutY="529.0" mnemonicParsing="false" text="Inscription" />
+   </children>
+</Pane>
