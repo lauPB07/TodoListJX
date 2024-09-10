@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.LoginController">
    <children>
       <Label layoutX="80.0" layoutY="78.0" text="Bienvenue !">
          <font>
@@ -25,14 +25,14 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="95.0" layoutY="383.0" text="Label pour erreur " textFill="#f70707">
+      <Label fx:id="messageErreurField" layoutX="95.0" layoutY="383.0" text="Label pour erreur " textFill="#f70707">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="email" layoutX="76.0" layoutY="183.0" promptText="Votre email" />
-      <PasswordField fx:id="mdp" layoutX="76.0" layoutY="285.0" promptText="Mot de passe" />
-      <Button layoutX="114.0" layoutY="433.0" mnemonicParsing="false" text="Connexion" />
+      <TextField fx:id="emailField" layoutX="76.0" layoutY="183.0" promptText="Votre email" />
+      <PasswordField fx:id="mdpField" layoutX="76.0" layoutY="285.0" promptText="Mot de passe" />
+      <Button layoutX="114.0" layoutY="433.0" mnemonicParsing="false" onAction="#connexion" text="Connexion" />
       <Button layoutX="87.0" layoutY="480.0" mnemonicParsing="false" text="Mot de passe oublier" />
       <Button layoutX="113.0" layoutY="529.0" mnemonicParsing="false" text="Inscription" />
    </children>

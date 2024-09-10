@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="" />
+    <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/loginView.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +48,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="appli.todolistjx" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appli.todolistjx.StartApplication" />
@@ -72,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725968759092</updated>
-      <workItem from="1725968760192" duration="2185000" />
+      <workItem from="1725968760192" duration="3115000" />
     </task>
     <servers />
   </component>
