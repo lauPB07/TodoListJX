@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/InscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/inscription.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/StartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/inscription.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/loginView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\laura\IdeaProjects\TodolistJX\src\main\resources\appli\todolistjx" />
       <recent name="C:\Users\laura\IdeaProjects\TodolistJX\src\main\resources\appli\todolistjx\acceuil" />
+      <recent name="C:\Users\laura\IdeaProjects\TodolistJX\src\main\resources\appli\todolistjx" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="appli.todolistjx" />
@@ -94,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725968759092</updated>
-      <workItem from="1725968760192" duration="4915000" />
+      <workItem from="1725968760192" duration="6474000" />
     </task>
     <servers />
   </component>

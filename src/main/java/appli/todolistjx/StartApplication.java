@@ -12,11 +12,12 @@ public class StartApplication extends Application {
     private static Stage maStage;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("loginView.fxml"));
+        maStage= stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("acceuil/loginView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("TodoList !");
-        stage.setScene(scene);
-        stage.show();
+        maStage.setTitle("TodoList !");
+        maStage.setScene(scene);
+        maStage.show();
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package appli.todolistjx.acceuil;
 
+import appli.todolistjx.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -24,7 +25,7 @@ public class LoginController {
 
     @FXML
     void inscription(ActionEvent event) {
-
+        StartApplication.changeScene("acceuil/inscription","Inscription");
     }
 
     @FXML
