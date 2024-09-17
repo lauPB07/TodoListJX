@@ -1,6 +1,7 @@
 package appli.todolistjx.acceuil;
 
 import appli.todolistjx.StartApplication;
+import appli.todolistjx.entity.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -21,6 +22,12 @@ public class LoginController {
     void connexion(ActionEvent event) {
         System.out.println("L email est : "+emailField.getText());
         System.out.println("Le mot de passe est : "+mdpField.getText());
+        if(emailField.getText().isBlank()  &&  mdpField.getText().isBlank()){
+            messageErreurField.setText("entrer l'email et le mot de passe ");
+        }else {
+            User.connexion(emailField.getText(),messageErreurField.getText(),messageErreurField);
+            StartApplication.changeScene("acceuil/acceuil","acceuil");
+        }
     }
 
     @FXML
