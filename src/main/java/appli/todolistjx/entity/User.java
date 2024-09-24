@@ -74,31 +74,5 @@ public class User {
         return  nom ;
     }
 
-    public static User connexion(String identifiant, String mdp, Label label){
-        User user = new User();
-        Bdd connexionBdd = new Bdd();
-        Connection connection = connexionBdd.getBdd();
-        String sql = "SELECT * FROM utilisateur WHERE email ='"+identifiant+ "' AND mdp ='"+mdp+"'";
 
-        try{
-            PreparedStatement requetePrepare = connection.prepareStatement(sql);
-            ResultSet resultatRequette = requetePrepare.executeQuery();
-            if(resultatRequette.next()){
-                int id = resultatRequette.getInt(1);
-                String nom = resultatRequette.getString(2);
-                String prenom = resultatRequette.getString(3);
-                String email = resultatRequette.getString(4);
-                String mdP = resultatRequette.getString(5);
-                user = new User(id,nom, prenom,email,mdP);
-                return user;
-            }else {
-                label.setText("Erreur veuillez re essayer");
-
-            }
-        }catch (Exception e ){
-            System.out.println(e.getMessage());
-
-        }
-        return user;
-    }
 }
