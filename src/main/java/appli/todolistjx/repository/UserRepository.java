@@ -1,8 +1,10 @@
 package appli.todolistjx.repository;
 
+import appli.todolistjx.StartApplication;
 import appli.todolistjx.bdd.Bdd;
 import appli.todolistjx.entity.User;
 import javafx.scene.control.Label;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.sql.Connection;
@@ -12,55 +14,78 @@ import java.sql.SQLException;
 
 public class UserRepository {
 
-    BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+    static BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+    static Bdd connexionBdd = new Bdd();
+    static Connection connection = connexionBdd.getBdd();
 
-    public void inscription(String nom, String prenom, String email, String mdp){
-
+    public User getUserByEmail(String email){
         Bdd connexionBdd = new Bdd();
         Connection connection = connexionBdd.getBdd();
-        String sql1 = "INSERT INTO utilisateur (nom,prenom,email,mdp) VALUES (?,?,?,?) ";
-
+        String sql = "SELECT * FROM utilisateur WHERE email = ? ";
         try {
-            PreparedStatement requete = connection.prepareStatement(sql1);
-            requete.setString(1,nom);
-            requete.setString(2,prenom);
-            requete.setString(3,email);
-            requete.setString(4,bcrypt.encode(mdp));
-            requete.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
-
-    public  User connexion(String identifiant, String mdp, Label label){
-        User user = null;
-        Bdd connexionBdd = new Bdd();
-        Connection connection = connexionBdd.getBdd();
-        String sql = "SELECT * FROM utilisateur WHERE email = ?  AND mdp = ? ";
-
-        try{
-            PreparedStatement requetePrepare = connection.prepareStatement(sql);
-            requetePrepare.setString(1,identifiant);
-            requetePrepare.setString(2, mdp);
-            ResultSet resultatRequette = requetePrepare.executeQuery();
+            PreparedStatement requete = connection.prepareStatement(sql);
+            requete.setString(1,email);
+            ResultSet resultatRequette = requete.executeQuery();
             if(resultatRequette.next()){
                 int id = resultatRequette.getInt(1);
                 String nom = resultatRequette.getString(2);
                 String prenom = resultatRequette.getString(3);
-                String email = resultatRequette.getString(4);
-                String mdP = resultatRequette.getString(5);
-                user = new User(id,nom, prenom,email,mdP);
+                String email1 = resultatRequette.getString(4);
+                String mdP = resultatRequette.getString(6);
+                System.out.println("yes !");
+                return new User(id,nom, prenom,email1,mdP);
+            }
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    public void inscription(String nom, String prenom, String email, String mdp, Label label){
+        if(this.getUserByEmail(email)!=null){
+            label.setText("Erreur vous avez deja un compte");
+        }else {
+            String sql1 = "INSERT INTO utilisateur (nom,prenom,email,mdp) VALUES (?,?,?,?) ";
+
+            try {
+                PreparedStatement requete = connection.prepareStatement(sql1);
+                requete.setString(1,nom);
+                requete.setString(2,prenom);
+                requete.setString(3,email);
+                requete.setString(4,bcrypt.encode(mdp));
+                requete.executeUpdate();
+                label.setText("Nouvelle utilisateur enregistrer !");
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+
+    }
+
+
+    public User connexion(String identifiant, String mdp, Label label){
+        System.out.println("Id : " + identifiant);
+        User user = this.getUserByEmail(identifiant);
+        System.out.println("Hello : " + user);
+
+        if (user == null){
+            label.setText("erreur vous n'avez pas de compte");
+        }else {
+            System.out.println("Hello : " + user.getMdp());
+
+            System.out.println(user.getMdp());
+            System.out.println(bcrypt.matches(mdp,user.getMdp()));
+            if (bcrypt.matches(mdp,user.getMdp())){
+                StartApplication.changeScene("acceuil/acceuil","Connexion");
                 return user;
             }else {
-                label.setText("Erreur veuillez re essayer");
-
+                label.setText("Mot de passe incorrect");
             }
-        }catch (Exception e ){
-            System.out.println(e.getMessage());
-
         }
-        return user;
+       return null;
     }
+
+
 }

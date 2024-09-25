@@ -41,8 +41,8 @@ public class InscriptionController {
 
         } else {
             UserRepository inscription = new UserRepository();
-            inscription.inscription(nomField.getText(),prenomField.getText(),emailField.getText(),mdpField.getText());
-            messageErreurField.setText("Nouvelle utilisateur enregistrer !");
+            inscription.inscription(nomField.getText(),prenomField.getText(),emailField.getText(),mdpField.getText(),messageErreurField);
+
 
         }
     }

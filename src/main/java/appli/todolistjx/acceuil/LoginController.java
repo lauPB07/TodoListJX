@@ -26,7 +26,8 @@ public class LoginController {
         if(emailField.getText().isBlank()  &&  mdpField.getText().isBlank()){
             messageErreurField.setText("entrer l'email et le mot de passe ");
         }else {
-             User user = UserRepository.connexion(emailField.getText(),mdpField.getText(),messageErreurField);
+            UserRepository userRepository = new UserRepository();
+             User user = userRepository.connexion(emailField.getText(),mdpField.getText(),messageErreurField);
              if(user!=null){
                  StartApplication.changeScene("acceuil/acceuil","acceuil");
              }

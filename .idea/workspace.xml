@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/InscriptionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/inscription.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +104,7 @@
       <workItem from="1726599129053" duration="5000" />
       <workItem from="1727160379897" duration="600000" />
       <workItem from="1727163633858" duration="2380000" />
-      <workItem from="1727177939391" duration="2686000" />
+      <workItem from="1727177939391" duration="7912000" />
     </task>
     <servers />
   </component>
