@@ -88,7 +88,7 @@ public class UserRepository {
     }
 
     public void modifMdp(String email, String mdp, Label label){
-        String sql = "UPDATE utilisateur SET mdp = ? WHERE email = ?";
+        String sql = "UPDATE utilisateur SET mot_de_passe = ? WHERE email = ?";
         try {
             PreparedStatement requete = connection.prepareStatement(sql);
             requete.setString(1,email);
@@ -96,6 +96,7 @@ public class UserRepository {
             requete.executeUpdate();
             label.setText("Le mot de passe a bien été modifier");
         } catch (SQLException e) {
+            label.setText("erreur");
             throw new RuntimeException(e);
         }
 
