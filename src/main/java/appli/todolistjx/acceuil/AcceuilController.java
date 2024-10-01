@@ -1,6 +1,8 @@
 package appli.todolistjx.acceuil;
 
+import appli.todolistjx.StartApplication;
 import appli.todolistjx.entity.Liste;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -27,6 +29,11 @@ public class AcceuilController implements Initializable {
             maColonne.setCellValueFactory(new PropertyValueFactory<>(colonnes[i][0]));
             tableauListe.getColumns().add(maColonne);
         }
+
+    }
+    @FXML
+    void ajoutListe(ActionEvent actionEvent){
+        StartApplication.changeScene("acceuil/ajoutListe","Ajouter une liste");
 
     }
 
