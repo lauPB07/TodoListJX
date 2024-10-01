@@ -91,8 +91,8 @@ public class UserRepository {
         String sql = "UPDATE utilisateur SET mot_de_passe = ? WHERE email = ?";
         try {
             PreparedStatement requete = connection.prepareStatement(sql);
-            requete.setString(1,email);
-            requete.setString(2,bcrypt.encode(mdp));
+            requete.setString(2,email);
+            requete.setString(1,bcrypt.encode(mdp));
             requete.executeUpdate();
             label.setText("Le mot de passe a bien été modifier");
         } catch (SQLException e) {
