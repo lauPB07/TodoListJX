@@ -31,7 +31,7 @@ public class UserRepository {
                 String nom = resultatRequette.getString(2);
                 String prenom = resultatRequette.getString(3);
                 String email1 = resultatRequette.getString(4);
-                String mdP = resultatRequette.getString(6);
+                String mdP = resultatRequette.getString(5);
                 System.out.println("yes !");
                 return new User(id,nom, prenom,email1,mdP);
             }
@@ -46,7 +46,7 @@ public class UserRepository {
         if(this.getUserByEmail(email)!=null){
             label.setText("Erreur vous avez deja un compte");
         }else {
-            String sql1 = "INSERT INTO utilisateur (nom,prenom,email,mdp) VALUES (?,?,?,?) ";
+            String sql1 = "INSERT INTO utilisateur (nom,prenom,email,mot_de_passe) VALUES (?,?,?,?) ";
 
             try {
                 PreparedStatement requete = connection.prepareStatement(sql1);
