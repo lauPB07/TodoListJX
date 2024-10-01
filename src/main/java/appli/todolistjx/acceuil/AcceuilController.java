@@ -1,2 +1,13 @@
-package appli.todolistjx.acceuil;public class AcceuilController {
+package appli.todolistjx.acceuil;
+
+import javafx.fxml.Initializable;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class AcceuilController implements Initializable {
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 }
