@@ -1,2 +1,4 @@
-package appli.todolistjx.repository;public class ListeRepository {
+package appli.todolistjx.repository;
+
+public class ListeRepository {
 }
