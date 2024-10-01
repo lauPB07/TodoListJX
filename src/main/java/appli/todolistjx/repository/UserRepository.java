@@ -87,5 +87,19 @@ public class UserRepository {
        return null;
     }
 
+    public void modifMdp(String email, String mdp, Label label){
+        String sql = "UPDATE utilisateur SET mdp = ? WHERE email = ?";
+        try {
+            PreparedStatement requete = connection.prepareStatement(sql);
+            requete.setString(1,email);
+            requete.setString(2,bcrypt.encode(mdp));
+            requete.executeUpdate();
+            label.setText("Le mot de passe a bien été modifier");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
 
 }

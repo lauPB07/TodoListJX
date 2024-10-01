@@ -42,7 +42,7 @@ public class LoginController {
 
     @FXML
     void motDePasseOublie(ActionEvent event) {
-
+        StartApplication.changeScene("acceuil/oublieMdp","Oublie de mot de passe");
     }
 
 }
