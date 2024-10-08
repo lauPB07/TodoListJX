@@ -32,7 +32,6 @@ public class UserRepository {
                 String prenom = resultatRequette.getString(3);
                 String email1 = resultatRequette.getString(4);
                 String mdP = resultatRequette.getString(5);
-                System.out.println("yes !");
                 return new User(id,nom, prenom,email1,mdP);
             }
 
