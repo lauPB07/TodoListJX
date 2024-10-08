@@ -1,13 +1,17 @@
 package appli.todolistjx.repository;
 
 import appli.todolistjx.bdd.Bdd;
+import appli.todolistjx.entity.Liste;
 import appli.todolistjx.entity.User;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ListeRepository {
     static Bdd connexionBdd = new Bdd();
@@ -48,5 +52,38 @@ public class ListeRepository {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public ArrayList<Liste> recupererListe() {
+        ArrayList<Liste> liste = new ArrayList<>();
+        Bdd connexionBdd = new Bdd();
+        Connection connection = connexionBdd.getBdd();
+        String sql = "SELECT * FROM liste ";
+        try {
+            PreparedStatement requetePrepare = connection.prepareStatement(sql);
+            ResultSet resultatRequette = requetePrepare.executeQuery();
+            while (resultatRequette.next()) {
+                liste.add(new Liste(resultatRequette.getString("id_liste"),resultatRequette.getString("nom")));
+            }
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+
+        }
+        return liste;
+    }
+
+    public void deleteListe(int id){
+        String sql = "DELETE FROM utilisateur where id_utilisateur =?";
+        try{
+            PreparedStatement requetePrepare = connection.prepareStatement(sql);
+            requetePrepare.setInt(1, id);
+            requetePrepare.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 }

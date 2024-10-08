@@ -13,4 +13,6 @@ module appli.todolistjx {
     exports appli.todolistjx;
     exports appli.todolistjx.acceuil;
     opens appli.todolistjx.acceuil to javafx.fxml;
+    exports appli.todolistjx.entity;
+    opens appli.todolistjx.entity to javafx.fxml;
 }

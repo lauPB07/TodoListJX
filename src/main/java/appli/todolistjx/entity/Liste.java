@@ -1,19 +1,19 @@
 package appli.todolistjx.entity;
 
 public class Liste {
-    public Liste(int id, String nom) {
-        this.id = id;
+    public Liste(String id, String nom) {
+        this.idListe = id;
         this.nom = nom;
     }
 
-    private int id;
+    private String idListe;
 
-    public int getId() {
-        return id;
+    public String getIdListe() {
+        return idListe;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdListe(String id) {
+        this.idListe = id;
     }
 
     public String getNom() {
