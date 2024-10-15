@@ -65,9 +65,9 @@ public class UserRepository {
 
 
     public User connexion(String identifiant, String mdp, Label label){
-        System.out.println("Id : " + identifiant);
+        //System.out.println("Id : " + identifiant);
         User user = this.getUserByEmail(identifiant);
-        System.out.println("Hello : " + user);
+        //System.out.println("Hello : " + user);
 
         if (user == null){
             label.setText("erreur vous n'avez pas de compte");

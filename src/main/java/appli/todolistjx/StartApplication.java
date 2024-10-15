@@ -38,4 +38,20 @@ public class StartApplication extends Application {
         }
 
     }
+
+    public static void changeScene(String fxml, Object controlleur) {
+        maStage.close();
+        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource(fxml+".fxml"));
+        fxmlLoader.setController(controlleur);
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load());
+            maStage.setTitle("Hello!");
+            maStage.setScene(scene);
+            maStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

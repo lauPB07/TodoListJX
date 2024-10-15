@@ -63,7 +63,7 @@ public class ListeRepository {
             PreparedStatement requetePrepare = connection.prepareStatement(sql);
             ResultSet resultatRequette = requetePrepare.executeQuery();
             while (resultatRequette.next()) {
-                liste.add(new Liste(resultatRequette.getString("id_liste"),resultatRequette.getString("nom")));
+                liste.add(new Liste(resultatRequette.getInt("id_liste"),resultatRequette.getString("nom")));
             }
 
 
