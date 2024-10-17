@@ -86,4 +86,18 @@ public class ListeRepository {
 
 
     }
+
+    public void updateListe(String nom, int id, Label label){
+        String sql = "UPDATE liste SET nom = ? WHERE id = ?";
+        try {
+            PreparedStatement requete = connection.prepareStatement(sql);
+            requete.setString(1,nom);
+            requete.setInt(2,id);
+            requete.executeUpdate();
+            label.setText("La liste a bien été modifier");
+        } catch (SQLException e) {
+            label.setText("erreur");
+            throw new RuntimeException(e);
+        }
+    }
 }

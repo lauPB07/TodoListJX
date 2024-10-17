@@ -70,6 +70,7 @@ public class AcceuilController implements Initializable {
             TableColumn colone = cell.getTableColumn();
             Liste listesel = tableauListe.getItems().get(indexLigne);
             System.out.println("Double-clique ligne "+indexLigne+" , colone  "+colone.getText()+ " : "+ listesel);
+            StartApplication.changeScene("acceuil/editerListeView",new EditerListeController(listesel));
         } else if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() ==1) {
             TablePosition cell = tableauListe.getSelectionModel().getSelectedCells().get(0);
             int indexLigne = cell.getRow();

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerListeView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerListeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/Liste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/ListeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/ListeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerListeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerListeView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1728377685923" duration="616000" />
       <workItem from="1728385692197" duration="7454000" />
       <workItem from="1728394160601" duration="4000" />
-      <workItem from="1728992500006" duration="1993000" />
+      <workItem from="1728992500006" duration="5180000" />
     </task>
     <servers />
   </component>
