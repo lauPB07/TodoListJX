@@ -15,6 +15,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class AcceuilController implements Initializable {
@@ -74,8 +75,16 @@ public class AcceuilController implements Initializable {
             disable.setVisible(true);
             int id = listesel.getIdListe();
             disable.setOnAction(event1 -> {
-                listeRepo.deleteListe(id,labelErreur);
-                disable.setVisible(false);
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("Confirmation de suppression");
+                alert.setHeaderText("Êtes-vous sûr de vouloir supprimer la liste ?");
+                Optional<ButtonType> result = alert.showAndWait();
+                if (result.isPresent() && result.get() == ButtonType.OK) {
+                    listeRepo.deleteListe(id,labelErreur);
+                    disable.setVisible(false);
+                }else {
+                    labelErreur.setText("Supression annulée");
+                }
             });
 
         }
