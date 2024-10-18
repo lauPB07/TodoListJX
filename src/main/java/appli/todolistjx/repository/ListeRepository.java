@@ -74,12 +74,13 @@ public class ListeRepository {
         return liste;
     }
 
-    public void deleteListe(int id){
-        String sql = "DELETE FROM utilisateur where id_utilisateur =?";
+    public void deleteListe(int id, Label label){
+        String sql = "DELETE FROM liste where id_liste =?";
         try{
             PreparedStatement requetePrepare = connection.prepareStatement(sql);
             requetePrepare.setInt(1, id);
             requetePrepare.executeUpdate();
+            label.setText("Liste bien supprimer");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -88,7 +89,7 @@ public class ListeRepository {
     }
 
     public void updateListe(String nom, int id, Label label){
-        String sql = "UPDATE liste SET nom = ? WHERE id = ?";
+        String sql = "UPDATE liste SET nom = ? WHERE id_liste = ?";
         try {
             PreparedStatement requete = connection.prepareStatement(sql);
             requete.setString(1,nom);

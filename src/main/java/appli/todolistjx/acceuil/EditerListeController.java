@@ -20,6 +20,12 @@ public class EditerListeController implements Initializable {
     @FXML
     private TextField nomField;
 
+    @FXML
+    private Button edit;
+
+    @FXML
+    private Button retour;
+
 
     private Liste liste;
     private ListeRepository listeRepository = new ListeRepository();
@@ -42,5 +48,12 @@ public class EditerListeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.nomField.setText(liste.getNom());
+        edit.setOnAction(event -> {
+            modifier(event);
+        });
+        retour.setOnAction(event ->{
+            retour(event);
+        });
+
     }
 }

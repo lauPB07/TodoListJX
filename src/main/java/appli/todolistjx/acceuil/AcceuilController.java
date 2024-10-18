@@ -7,9 +7,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TablePosition;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
@@ -23,6 +21,12 @@ public class AcceuilController implements Initializable {
 
     @FXML
     private TableView<Liste> tableauListe;
+
+    @FXML
+    private Label labelErreur;
+
+    @FXML
+    private Button disable;
 
     ListeRepository listeRepo = new ListeRepository();
 
@@ -41,7 +45,7 @@ public class AcceuilController implements Initializable {
         ArrayList<Liste> list = listeRepo.recupererListe();
         tableauListe.getItems().addAll(list);
 
-
+        disable.setVisible(false);
 
 
 
@@ -51,16 +55,6 @@ public class AcceuilController implements Initializable {
         StartApplication.changeScene("acceuil/ajoutListe","Ajouter une liste");
     }
 
-    @FXML
-    void desable(ActionEvent actionEvent){
-        TablePosition cell = tableauListe.getSelectionModel().getSelectedCells().get(0);
-        int indexLigne = cell.getRow();
-        TableColumn colone = cell.getTableColumn();
-        Liste listesel = tableauListe.getItems().get(indexLigne);
-        int id = listesel.getIdListe();
-        System.out.println(id);
-        listeRepo.deleteListe(id);
-    }
 
     @FXML
     void onListeSelection(MouseEvent event){
@@ -77,6 +71,13 @@ public class AcceuilController implements Initializable {
             TableColumn colone = cell.getTableColumn();
             Liste listesel = tableauListe.getItems().get(indexLigne);
             System.out.println("Simple-click ligne "+indexLigne+" colonne "+colone.getText()+ " : "+listesel);
+            disable.setVisible(true);
+            int id = listesel.getIdListe();
+            disable.setOnAction(event1 -> {
+                listeRepo.deleteListe(id,labelErreur);
+                disable.setVisible(false);
+            });
+
         }
     }
 

@@ -22,6 +22,7 @@
       <Button layoutX="40.0" layoutY="318.0" mnemonicParsing="false" onAction="#ajoutListe" text="Ajouter une liste" />
       <Button layoutX="40.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Les types" />
       <Button layoutX="40.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Deconnexion" />
-      <Button layoutX="594.0" layoutY="449.0" mnemonicParsing="false" onAction="#desable" text="Disable" />
+      <Button fx:id="disable" layoutX="594.0" layoutY="449.0" mnemonicParsing="false" text="Disable" />
+      <Label fx:id="labelErreur" layoutX="308.0" layoutY="453.0" text="Label pour erreur " textFill="#f24e4e" />
    </children>
 </Pane>
