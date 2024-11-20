@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="213.0" layoutY="52.0" text="Enssemble des taches de votre liste :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableauTaches" layoutX="213.0" layoutY="85.0" onMouseClicked="#onListeSelection" prefHeight="246.0" prefWidth="332.0" />
+      <Button layoutX="44.0" layoutY="144.0" mnemonicParsing="false" text="Ajouter une tache " />
+      <Button layoutX="75.0" layoutY="200.0" mnemonicParsing="false" text="Retour" />
+      <Button fx:id="supprimer" layoutX="456.0" layoutY="351.0" mnemonicParsing="false" text="Supprimer" />
+      <Button fx:id="modifier" layoutX="286.0" layoutY="351.0" mnemonicParsing="false" text="Modifier la tache" />
+   </children>
+</Pane>

@@ -8,7 +8,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.AcceuilController">
    <children>
-      <Label layoutX="28.0" layoutY="62.0" text="Bienvenue !">
+      <Label fx:id="labelBienvenue" layoutX="28.0" layoutY="62.0" text="Bienvenue !">
          <font>
             <Font size="25.0" />
          </font>
@@ -21,8 +21,9 @@
       <TableView fx:id="tableauListe" layoutX="194.0" layoutY="97.0" onMouseClicked="#onListeSelection" prefHeight="333.0" prefWidth="494.0" />
       <Button layoutX="40.0" layoutY="318.0" mnemonicParsing="false" onAction="#ajoutListe" text="Ajouter une liste" />
       <Button layoutX="40.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Les types" />
-      <Button layoutX="40.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Deconnexion" />
+      <Button layoutX="40.0" layoutY="410.0" mnemonicParsing="false" onAction="#deconnexion" prefHeight="25.0" prefWidth="103.0" text="Deconnexion" />
       <Button fx:id="disable" layoutX="594.0" layoutY="449.0" mnemonicParsing="false" text="Disable" />
       <Label fx:id="labelErreur" layoutX="308.0" layoutY="453.0" text="Label pour erreur " textFill="#f24e4e" />
+      <Button fx:id="tache" layoutX="506.0" layoutY="449.0" mnemonicParsing="false" text="Tache" />
    </children>
 </Pane>

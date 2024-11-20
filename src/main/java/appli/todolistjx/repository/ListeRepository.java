@@ -1,8 +1,10 @@
 package appli.todolistjx.repository;
 
+import appli.todolistjx.StartApplication;
 import appli.todolistjx.bdd.Bdd;
 import appli.todolistjx.entity.Liste;
 import appli.todolistjx.entity.User;
+import appli.todolistjx.entity.UtilisateurConnecte;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
@@ -25,19 +27,20 @@ public class ListeRepository {
             requete.setString(1,nom);
             requete.executeUpdate();
             label.setText("Nouvelle Liste créer !");
+            StartApplication.changeScene("acceuil/acceuil", "accueil");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
-        //String sql2 = "INSERT INTO utilisateur_liste (ref_utilisateur,ref_liste) VALUES (?,?) ";
-        //try {
-        //    PreparedStatement requete = connection.prepareStatement(sql2);
-         //   requete.setInt(1,user.getId());
-         //   requete.setInt(2,dernierId());
-         //   requete.executeUpdate();
-       // } catch (SQLException e) {
-        //    throw new RuntimeException(e);
-       // }
+        String sql2 = "INSERT INTO utilisateur_liste (ref_utilisateur,ref_liste) VALUES (?,?) ";
+        try {
+            PreparedStatement requete = connection.prepareStatement(sql2);
+            requete.setInt(1, UtilisateurConnecte.getInstance().getId());
+            requete.setInt(2,dernierId());
+            requete.executeUpdate();
+        } catch (SQLException e) {
+              throw new RuntimeException(e);
+        }
     }
 
     public Integer dernierId(){
@@ -58,9 +61,10 @@ public class ListeRepository {
         ArrayList<Liste> liste = new ArrayList<>();
         Bdd connexionBdd = new Bdd();
         Connection connection = connexionBdd.getBdd();
-        String sql = "SELECT * FROM liste ";
+        String sql = "SELECT * FROM liste AS l INNER JOIN utilisateur_liste AS u ON u.ref_liste = l.id_liste WHERE ref_utilisateur = ?  ";
         try {
             PreparedStatement requetePrepare = connection.prepareStatement(sql);
+            requetePrepare.setInt(1, UtilisateurConnecte.getInstance().getId());
             ResultSet resultatRequette = requetePrepare.executeQuery();
             while (resultatRequette.next()) {
                 liste.add(new Liste(resultatRequette.getInt("id_liste"),resultatRequette.getString("nom")));
@@ -78,6 +82,15 @@ public class ListeRepository {
         String sql = "DELETE FROM liste where id_liste =?";
         try{
             PreparedStatement requetePrepare = connection.prepareStatement(sql);
+            requetePrepare.setInt(1, id);
+            requetePrepare.executeUpdate();
+            label.setText("Liste bien supprimer");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        String sql2 = "DELETE FROM utilisateur_liste WHERE  ref_liste = ?  ";
+        try{
+            PreparedStatement requetePrepare = connection.prepareStatement(sql2);
             requetePrepare.setInt(1, id);
             requetePrepare.executeUpdate();
             label.setText("Liste bien supprimer");

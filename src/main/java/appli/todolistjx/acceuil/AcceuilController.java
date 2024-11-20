@@ -2,6 +2,7 @@ package appli.todolistjx.acceuil;
 
 import appli.todolistjx.StartApplication;
 import appli.todolistjx.entity.Liste;
+import appli.todolistjx.entity.UtilisateurConnecte;
 import appli.todolistjx.repository.ListeRepository;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,10 +25,16 @@ public class AcceuilController implements Initializable {
     private TableView<Liste> tableauListe;
 
     @FXML
+    private Label labelBienvenue;
+
+    @FXML
     private Label labelErreur;
 
     @FXML
     private Button disable;
+
+    @FXML
+    private Button tache;
 
     ListeRepository listeRepo = new ListeRepository();
 
@@ -47,6 +54,14 @@ public class AcceuilController implements Initializable {
         tableauListe.getItems().addAll(list);
 
         disable.setVisible(false);
+        tache.setVisible(false);
+
+        UtilisateurConnecte utilisateur = UtilisateurConnecte.getInstance();
+        if (utilisateur != null) {
+            labelBienvenue.setText("Bienvenue "+ utilisateur.getNom());
+        } else {
+            labelBienvenue.setText("Bienvenue Inconue");
+        }
 
 
 
@@ -73,6 +88,7 @@ public class AcceuilController implements Initializable {
             Liste listesel = tableauListe.getItems().get(indexLigne);
             System.out.println("Simple-click ligne "+indexLigne+" colonne "+colone.getText()+ " : "+listesel);
             disable.setVisible(true);
+            tache.setVisible(true);
             int id = listesel.getIdListe();
             disable.setOnAction(event1 -> {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -86,7 +102,18 @@ public class AcceuilController implements Initializable {
                     labelErreur.setText("Supression annulée");
                 }
             });
+            tache.setOnAction(event2 -> {
+                StartApplication.changeScene("acceuil/tacheView",new AcceuilTaches(listesel));
+            });
 
+        }
+    }
+    @FXML
+    void deconnexion(ActionEvent event) {
+        if (UtilisateurConnecte.clearInstance()) {
+            StartApplication.changeScene("acceuil/loginView", "Connexion");
+        } else {
+            System.out.println("Aucune session active à fermer.");
         }
     }
 
