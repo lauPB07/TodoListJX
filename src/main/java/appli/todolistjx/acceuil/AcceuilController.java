@@ -4,7 +4,6 @@ import appli.todolistjx.StartApplication;
 import appli.todolistjx.entity.Liste;
 import appli.todolistjx.entity.UtilisateurConnecte;
 import appli.todolistjx.repository.ListeRepository;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -100,10 +99,13 @@ public class AcceuilController implements Initializable {
                     disable.setVisible(false);
                 }else {
                     labelErreur.setText("Supression annulée");
+                    disable.setVisible(false);
                 }
             });
             tache.setOnAction(event2 -> {
+                //System.out.println("test" + listesel.getIdListe());
                 StartApplication.changeScene("acceuil/tacheView",new AcceuilTaches(listesel));
+                tache.setVisible(false);
             });
 
         }
