@@ -35,6 +35,9 @@ public class AcceuilController implements Initializable {
     @FXML
     private Button tache;
 
+    @FXML
+    private Button type;
+
     ListeRepository listeRepo = new ListeRepository();
 
     @Override
@@ -117,6 +120,11 @@ public class AcceuilController implements Initializable {
         } else {
             System.out.println("Aucune session active à fermer.");
         }
+    }
+
+    @FXML
+    void type(ActionEvent event){
+        StartApplication.changeScene("acceuil/typeView", "Types de taches");
     }
 
 

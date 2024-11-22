@@ -36,6 +36,10 @@ public class AcceuilTaches implements Initializable {
     @FXML
     private Button retour;
 
+
+    @FXML
+    private Label titre;
+
     TacheRepository tacheRepo = new TacheRepository();
     private Liste liste;
 
@@ -63,6 +67,11 @@ public class AcceuilTaches implements Initializable {
             onListeSelection((MouseEvent) event);
         });
         supprimer.setVisible(false);
+        ajoutTache.setOnAction(event -> {
+            createTache(event);
+        });
+
+        titre.setText("Enssemble des taches de votre liste "+ liste.getNom()+ " : ");
 
 
 
@@ -80,7 +89,7 @@ public class AcceuilTaches implements Initializable {
             TableColumn colone = cell.getTableColumn();
             Tache tachesel = tableauTaches.getItems().get(indexLigne);
             System.out.println("Double-clique ligne "+indexLigne+" , colone  "+colone.getText()+ " : "+ tachesel);
-            //StartApplication.changeScene("acceuil/editerTacheView",new EditerTacheController(tachesel));
+            StartApplication.changeScene("acceuil/editerTacheView",new EditerTacheController(tachesel,liste));
         } else if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() ==1) {
             TablePosition cell = tableauTaches.getSelectionModel().getSelectedCells().get(0);
             int indexLigne = cell.getRow();
@@ -95,7 +104,7 @@ public class AcceuilTaches implements Initializable {
                 alert.setHeaderText("Êtes-vous sûr de vouloir supprimer la liste ?");
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.isPresent() && result.get() == ButtonType.OK) {
-                    //tacheRepo.deleteListe(id,labelErreur);
+                    tacheRepo.deleteTache(id,labelerreur);
                     supprimer.setVisible(false);
                 }else {
                     labelerreur.setText("Supression annulée");
@@ -110,5 +119,10 @@ public class AcceuilTaches implements Initializable {
     @FXML
     void retour(ActionEvent event) {
         StartApplication.changeScene("acceuil/acceuil","Acceuil");
+    }
+
+    @FXML
+    void createTache(ActionEvent event){
+        StartApplication.changeScene("acceuil/ajoutTache",new AjoutTache(liste));
     }
 }

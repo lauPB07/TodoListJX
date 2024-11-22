@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Label layoutX="31.0" layoutY="36.0" text="Ajouter une nouvelle tache a ma liste :">
          <font>
@@ -21,6 +21,7 @@
       <TextField fx:id="etatTache" layoutX="112.0" layoutY="200.0" promptText="Etat de votre tache" />
       <ComboBox fx:id="typeTache" layoutX="111.0" layoutY="275.0" prefWidth="150.0" promptText="Le type de tache" />
       <Button fx:id="valider" layoutX="160.0" layoutY="332.0" mnemonicParsing="false" text="valider" />
-      <Button fx:id="retour" layoutX="160.0" layoutY="361.0" mnemonicParsing="false" text="Retour" />
+      <Button fx:id="retour" layoutX="160.0" layoutY="361.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+      <Label fx:id="labelErreur" layoutX="137.0" layoutY="308.0" text="Label pour erreur :" textFill="#e71c1c" />
    </children>
 </Pane>

@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AjoutTache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AjoutType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutType.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTypeview.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/typeView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilTaches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilTaches.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TacheRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TacheRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutTache.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutTache.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTacheView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTacheView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/tacheView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/tacheView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -129,7 +142,9 @@
       <workItem from="1732021720727" duration="1724000" />
       <workItem from="1732098046006" duration="859000" />
       <workItem from="1732102253500" duration="8330000" />
-      <workItem from="1732178094953" duration="3354000" />
+      <workItem from="1732178094953" duration="8313000" />
+      <workItem from="1732220320258" duration="943000" />
+      <workItem from="1732265335606" duration="6779000" />
     </task>
     <servers />
   </component>

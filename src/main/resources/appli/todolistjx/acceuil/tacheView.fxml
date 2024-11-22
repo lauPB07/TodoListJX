@@ -8,7 +8,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="213.0" layoutY="52.0" text="Enssemble des taches de votre liste :">
+      <Label fx:id="titre" layoutX="213.0" layoutY="52.0" text="Enssemble des taches de votre liste :">
          <font>
             <Font size="16.0" />
          </font>
