@@ -7,21 +7,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" >
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="382.0" stylesheets="@button.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="31.0" layoutY="36.0" text="Ajouter une nouvelle tache a ma liste :">
+      <Label layoutX="86.0" layoutY="36.0" text="Ajouter une nouvelle tache a ma liste :">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <Label layoutX="174.0" layoutY="107.0" text="Nom :" />
-      <Label layoutX="171.0" layoutY="244.0" text="Type :" />
-      <Label layoutX="174.0" layoutY="176.0" text="Etat :" />
-      <TextField fx:id="nomTache" layoutX="113.0" layoutY="138.0" promptText="Nom de la tache" />
-      <TextField fx:id="etatTache" layoutX="112.0" layoutY="200.0" promptText="Etat de votre tache" />
-      <ComboBox fx:id="typeTache" layoutX="111.0" layoutY="275.0" prefWidth="150.0" promptText="Le type de tache" />
-      <Button fx:id="valider" layoutX="160.0" layoutY="332.0" mnemonicParsing="false" text="valider" />
-      <Button fx:id="retour" layoutX="160.0" layoutY="361.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+      <Label layoutX="172.0" layoutY="98.0" text="Nom :" />
+      <Label layoutX="169.0" layoutY="224.0" text="Type :" />
+      <Label layoutX="174.0" layoutY="162.0" text="Etat :" />
+      <TextField fx:id="nomTache" layoutX="112.0" layoutY="124.0" promptText="Nom de la tache" styleClass="textfield" stylesheets="@button.css" />
+      <TextField fx:id="etatTache" layoutX="112.0" layoutY="188.0" promptText="Etat de votre tache" styleClass="textfield" stylesheets="@button.css" />
+      <ComboBox fx:id="typeTache" layoutX="111.0" layoutY="255.0" prefWidth="150.0" promptText="Le type de tache" />
+      <Button fx:id="valider" layoutX="143.0" layoutY="323.0" mnemonicParsing="false" styleClass="buttonConnexion" stylesheets="@button.css" text="valider" />
+      <Button fx:id="retour" layoutX="145.0" layoutY="367.0" mnemonicParsing="false" onAction="#retour" styleClass="buttonConnexion" stylesheets="@button.css" text="Retour" />
       <Label fx:id="labelErreur" layoutX="137.0" layoutY="308.0" text="Label pour erreur :" textFill="#e71c1c" />
    </children>
 </Pane>

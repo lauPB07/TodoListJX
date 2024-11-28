@@ -7,19 +7,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="299.0" styleClass="body" stylesheets="@button.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.LoginController">
    <children>
-      <Label layoutX="80.0" layoutY="78.0" text="Bienvenue !">
+      <Label layoutX="78.0" layoutY="52.0" text="Bienvenue !">
          <font>
             <Font size="27.0" />
          </font>
       </Label>
-      <Label layoutX="112.0" layoutY="138.0" text="Votre Email :">
+      <Label layoutX="109.0" layoutY="153.0" text="Votre email :">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="87.0" layoutY="254.0" text="Votre Mot de passe :">
+      <Label layoutX="87.0" layoutY="254.0" text="Votre mot de passe :">
          <font>
             <Font size="14.0" />
          </font>
@@ -29,10 +29,10 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="emailField" layoutX="76.0" layoutY="183.0" promptText="Votre email" />
-      <PasswordField fx:id="mdpField" layoutX="76.0" layoutY="285.0" promptText="Mot de passe" />
-      <Button layoutX="114.0" layoutY="433.0" mnemonicParsing="false" onAction="#connexion" text="Connexion" />
-      <Button layoutX="87.0" layoutY="480.0" mnemonicParsing="false" onAction="#motDePasseOublie" text="Mot de passe oublier" />
-      <Button layoutX="113.0" layoutY="529.0" mnemonicParsing="false" onAction="#inscription" text="Inscription" />
+      <TextField fx:id="emailField" layoutX="76.0" layoutY="183.0" promptText="Email" styleClass="textfield" stylesheets="@button.css" />
+      <PasswordField fx:id="mdpField" layoutX="76.0" layoutY="285.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@button.css" />
+      <Button layoutX="92.0" layoutY="424.0" mnemonicParsing="false" onAction="#connexion" styleClass="buttonConnexion" stylesheets="@button.css" text="Connexion" />
+      <Button layoutX="61.0" layoutY="479.0" mnemonicParsing="false" onAction="#motDePasseOublie" styleClass="buttonConnexion" stylesheets="@button.css" text="Mot de passe oublié" />
+      <Button layoutX="92.0" layoutY="527.0" mnemonicParsing="false" onAction="#inscription" styleClass="buttonConnexion" stylesheets="@button.css" text="Inscription" />
    </children>
 </Pane>

@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.OublieMdp">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="332.0" stylesheets="@button.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.OublieMdp">
    <children>
-      <Label layoutX="15.0" layoutY="53.0" text="Oublie de Mot de Passe ">
+      <Label layoutX="99.0" layoutY="53.0" text="Oublie de Mot de Passe ">
          <font>
             <Font size="28.0" />
          </font>
@@ -18,10 +18,10 @@
       <Label layoutX="102.0" layoutY="267.0" text="Nouveau mot de passe :" />
       <Label layoutX="58.0" layoutY="357.0" text="Comfirmation du nouveau mot de passe " />
       <Label fx:id="erreur" layoutX="117.0" layoutY="439.0" text="Label pour erreur " textFill="#df2323" />
-      <TextField fx:id="emailField" layoutX="92.0" layoutY="215.0" promptText="Email" />
-      <PasswordField fx:id="mdpField" layoutX="91.0" layoutY="308.0" promptText="Mot de passe" />
-      <PasswordField fx:id="confirmationField" layoutX="91.0" layoutY="396.0" promptText="COmfirmation du mot de passe" />
-      <Button layoutX="139.0" layoutY="527.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
-      <Button layoutX="140.0" layoutY="479.0" mnemonicParsing="false" onAction="#valider" text="Valider" />
+      <TextField fx:id="emailField" layoutX="92.0" layoutY="215.0" promptText="Email" styleClass="textfield" stylesheets="@button.css" />
+      <PasswordField fx:id="mdpField" layoutX="91.0" layoutY="308.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@button.css" />
+      <PasswordField fx:id="confirmationField" layoutX="91.0" layoutY="396.0" promptText="COmfirmation du mot de passe" styleClass="textfield" stylesheets="@button.css" />
+      <Button layoutX="121.0" layoutY="527.0" mnemonicParsing="false" onAction="#retour" styleClass="buttonConnexion" stylesheets="@button.css" text="Retour" />
+      <Button layoutX="121.0" layoutY="477.0" mnemonicParsing="false" onAction="#valider" styleClass="buttonConnexion" stylesheets="@button.css" text="Valider" />
    </children>
 </Pane>

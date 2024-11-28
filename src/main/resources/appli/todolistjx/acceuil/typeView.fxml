@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.AcceuilType">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@button.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.AcceuilType">
    <children>
       <Label layoutX="199.0" layoutY="54.0" text="Voici tous les types de taches :">
          <font>
@@ -14,10 +14,10 @@
          </font>
       </Label>
       <TableView fx:id="tableautype" layoutX="194.0" layoutY="92.0" onMouseClicked="#onListeSelection" prefHeight="222.0" prefWidth="361.0" />
-      <Button fx:id="ajouttype" layoutX="36.0" layoutY="178.0" mnemonicParsing="false" onAction="#ajoutType" text="Ajouter un type" />
-      <Button fx:id="retour" layoutX="59.0" layoutY="232.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
-      <Button fx:id="modifier" layoutX="349.0" layoutY="346.0" mnemonicParsing="false" text="Modifier" />
-      <Button fx:id="supprimer" layoutX="455.0" layoutY="346.0" mnemonicParsing="false" text="Supprimer" />
+      <Button fx:id="ajouttype" layoutX="36.0" layoutY="178.0" mnemonicParsing="false" onAction="#ajoutType" styleClass="buttonConnexion" stylesheets="@button.css" text="Ajouter un type" />
+      <Button fx:id="retour" layoutX="64.0" layoutY="233.0" mnemonicParsing="false" onAction="#retour" styleClass="buttonConnexion" stylesheets="@button.css" text="Retour" />
+      <Button fx:id="modifier" layoutX="349.0" layoutY="346.0" mnemonicParsing="false" styleClass="buttonConnexion" stylesheets="@button.css" text="Modifier" />
+      <Button fx:id="supprimer" layoutX="455.0" layoutY="346.0" mnemonicParsing="false" styleClass="buttonConnexion" stylesheets="@button.css" text="Supprimer" />
       <Label fx:id="erreur" layoutX="236.0" layoutY="350.0" text="Label erreur" textFill="#e11b1b" />
    </children>
 </Pane>

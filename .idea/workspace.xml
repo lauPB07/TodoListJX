@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="164a7b64-6d75-4471-ab12-dc6a7da58b40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AjoutTache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AjoutType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/entity/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutType.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTypeview.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/typeView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilTaches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/AcceuilTaches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/acceuil/EditerTacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TacheRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TacheRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appli/todolistjx/repository/TypeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutListe.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutListe.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutTache.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutTache.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutType.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/ajoutType.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerListeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerListeView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTacheView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/editerTacheView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/tacheView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/tacheView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/inscription.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/inscription.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/loginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/loginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/oublieMdp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/appli/todolistjx/acceuil/oublieMdp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +28,7 @@
         <option value="JavaFXApplication" />
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -61,6 +55,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/laura/IdeaProjects/TodolistJX/src/main/resources/appli/todolistjx/acceuil&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -144,7 +139,9 @@
       <workItem from="1732102253500" duration="8330000" />
       <workItem from="1732178094953" duration="8313000" />
       <workItem from="1732220320258" duration="943000" />
-      <workItem from="1732265335606" duration="6779000" />
+      <workItem from="1732265335606" duration="9295000" />
+      <workItem from="1732463095821" duration="1563000" />
+      <workItem from="1732804991724" duration="1072000" />
     </task>
     <servers />
   </component>

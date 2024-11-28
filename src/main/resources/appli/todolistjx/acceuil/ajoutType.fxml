@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.AjoutType">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="323.0" stylesheets="@button.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.todolistjx.acceuil.AjoutType">
    <children>
-      <Label layoutX="62.0" layoutY="32.0" text="Ajouter un Type de tache :">
+      <Label layoutX="90.0" layoutY="33.0" text="Ajouter un Type de tache :">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
       <Label layoutX="147.0" layoutY="101.0" text="Nom :" />
       <Label layoutX="123.0" layoutY="192.0" text="Code couleur :" />
-      <TextField fx:id="nomType" layoutX="89.0" layoutY="135.0" promptText="Nom du type de tache" />
-      <TextField fx:id="codeCouleur" layoutX="86.0" layoutY="232.0" promptText="Code couleur pour le type de tache" />
-      <Button fx:id="valider" layoutX="135.0" layoutY="305.0" mnemonicParsing="false" onAction="#ajoutType" text="Valider" />
-      <Button fx:id="retour" layoutX="135.0" layoutY="345.0" mnemonicParsing="false" onAction="#retour" text="Retour" />
+      <TextField fx:id="nomType" layoutX="89.0" layoutY="135.0" promptText="Nom du type de tache" styleClass="textfield" stylesheets="@button.css" />
+      <TextField fx:id="codeCouleur" layoutX="86.0" layoutY="232.0" promptText="Code couleur pour le type de tache" styleClass="textfield" stylesheets="@button.css" />
+      <Button fx:id="valider" layoutX="118.0" layoutY="300.0" mnemonicParsing="false" onAction="#ajoutType" styleClass="buttonConnexion" stylesheets="@button.css" text="Valider" />
+      <Button fx:id="retour" layoutX="118.0" layoutY="349.0" mnemonicParsing="false" onAction="#retour" styleClass="buttonConnexion" stylesheets="@button.css" text="Retour" />
       <Label fx:id="erreur" layoutX="117.0" layoutY="272.0" text="Label pour erreur" textFill="#e41414" />
    </children>
 </Pane>

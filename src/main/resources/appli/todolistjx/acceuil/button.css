@@ -1,0 +1,72 @@
+.root {
+    -fx-background: linear-gradient(to left, #8e44ad, #9b59b6, #c39bd3);
+    -fx-min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
+    -fx-margin: 0; /* Retire les marges par défaut */
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-align-items: center;
+    -fx-color: white;
+    -fx-font-family: Arial, sans-serif;
+}
+
+.buttonConnexion{
+    -fx-background-color:
+            linear-gradient(#000000, #000000),
+            linear-gradient(#F0F8FF, #F0F8FF),
+            linear-gradient(#F0F8FF, #F0F8FF),
+            linear-gradient(#F0F8FF 0%, #F0F8FF 50%, #F0F8FF 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.textfield{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-color: #F0F8FF;
+}
+
+/* Applique un fond blanc au ComboBox */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #d1d1d1; /* Bordure gris clair */
+    -fx-border-radius: 4px; /* Coins arrondis */
+    -fx-padding: 5px; /* Espacement intérieur */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-text-fill: #333333; /* Couleur du texte */
+}
+
+/* Style des items dans la liste déroulante */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-control-inner-background: white;
+    -fx-border-color: #d1d1d1;
+}
+
+.list-cell {
+    -fx-text-fill: #333333; /* Couleur du texte dans les options */
+    -fx-background-color: transparent;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f0f0f0; /* Couleur de survol */
+}
+
+/* Flèche du ComboBox */
+.combo-box .arrow {
+    -fx-background-color: #333333; /* Couleur de la flèche */
+}
+
+/* Applique un effet de survol sur le ComboBox */
+.combo-box:hover {
+    -fx-border-color: #bbbbbb; /* Bordure gris clair lors du survol */
+}
+
+/* Applique un effet de clic sur le ComboBox */
+.combo-box:pressed {
+    -fx-border-color: #aaaaaa; /* Bordure plus sombre lorsqu'il est cliqué */
+}
