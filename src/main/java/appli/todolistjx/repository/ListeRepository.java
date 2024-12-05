@@ -79,6 +79,14 @@ public class ListeRepository {
     }
 
     public void deleteListe(int id, Label label){
+        String sql3 = "DELETE FROM tache WHERE ref_liste = ?";
+        try{
+            PreparedStatement requetePrepare = connection.prepareStatement(sql3);
+            requetePrepare.setInt(1, id);
+            requetePrepare.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         String sql = "DELETE FROM liste where id_liste =?";
         try{
             PreparedStatement requetePrepare = connection.prepareStatement(sql);
